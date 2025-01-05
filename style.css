@@ -1,0 +1,226 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container for the navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;  /* Hidden by default on large screens */
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-menu .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Navigation Links */
+#nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-links li {
+  margin-left: 20px;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Hide the menu links on small screens */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;  /* Hidden by default on small screens */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    width: 200px;
+  }
+
+  /* Show the hamburger menu on small screens */
+  .hamburger-menu {
+    display: block;
+  }
+
+  #nav-links.show {
+    display: flex;  /* Show the menu links when the hamburger is clicked */
+  }
+}
+
+
+
+
+
+
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+#services {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#booking {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#booking form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#booking form input, 
+#booking form select, 
+#booking form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#booking form button {
+  background-color: #ff69b4;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#contact {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .service-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bliss & Glow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+  
+  
+  
+  <!-- Navbar -->
+ <header>
+  <nav>
+    <!-- Logo Section -->
+    <div class="logo">
+      <img src="logo.png" alt="Bliss & Glow Logo">
+    </div>
+    
+    <!-- Hamburger Icon -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Menu Links (Initially Hidden) -->
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Luxury Beauty Treatments Just for You</h1>
+      <p>Where elegance meets relaxation</p>
+      <a href="#booking" class="cta-button">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Signature Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="facial.jpg" alt="Facial Service">
+        <h3>Facial Treatment</h3>
+        <p>Revitalize your skin with a rejuvenating facial.</p>
+      </div>
+      <div class="service-card">
+        <img src="hair-styling.jpg" alt="Hair Styling Service">
+        <h3>Hair Styling</h3>
+        <p>Professional cuts and styling to match your look.</p>
+      </div>
+      <div class="service-card">
+        <img src="manicure.jpg" alt="Manicure Service">
+        <h3>Manicure & Pedicure</h3>
+        <p>Pamper your hands and feet with our luxury treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide luxurious beauty services with a focus on relaxation and sophistication. Our expert team ensures a personalized experience tailored to your needs.</p>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <form id="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="service">Choose Service:</label>
+      <select id="service">
+        <option value="facial">Facial</option>
+        <option value="hair-styling">Hair Styling</option>
+        <option value="manicure">Manicure & Pedicure</option>
+      </select>
+      <label for="appointment">Preferred Time:</label>
+      <input type="datetime-local" id="appointment" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries, call us at 123-456-7890 or email info@bliss&glow.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bliss & Glow | All Rights Reserved</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
